@@ -618,9 +618,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    body {
+/*     body {
         overflow-x: hidden;
-    }
+    } */
     .header_top {
         display: none;
     }
@@ -694,6 +694,7 @@ footer {
         /* padding: 0 20px; */
         box-sizing: border-box;
         transition: .5s;
+        overflow-x: hidden;
     }
     header > div.header_bottom.on {
         left: 0;
@@ -739,12 +740,14 @@ footer {
         /* width: 538px; */
         width: 70%;
         top: 0;
-        right: -100%;
+        right: 0;
+        transform: translateX(-200%);
         height: auto;
         transition: .5s;
+        overflow-x: hidden;
     }
     header > div.depth02.on {
-        right: 0;
+        transform: translateX(0);
     }
     .depth02 > div {
         max-width: 538px;
